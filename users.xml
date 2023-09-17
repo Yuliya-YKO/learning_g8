@@ -1,0 +1,14 @@
+<users>
+  <user username="user1">
+    <gender>m</gender>
+    <firstname>Vasya</firstname>
+    <lastname>Pupkin</lastname>
+    <age>20</age>
+  </user>
+  <user username="user2">
+    <gender>f</gender>
+    <firstname>Vasilisa</firstname>
+    <lastname>Pupkina</lastname>
+    <age>21</age>
+  </user>
+</users>

@@ -1,0 +1,71 @@
+2023-09-14 22:00:28 DEBUG Selenium Manager binary found at: /usr/local/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager
+2023-09-14 22:00:28 DEBUG Executing process: /usr/local/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --output json
+2023-09-14 22:00:29 DEBUG Checking chromedriver in PATH
+2023-09-14 22:00:29 DEBUG Running command: chromedriver --version
+2023-09-14 22:00:29 DEBUG Output: ""
+2023-09-14 22:00:29 DEBUG chromedriver not found in PATH
+2023-09-14 22:00:29 DEBUG chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-09-14 22:00:29 DEBUG Using shell command to find out chrome version
+2023-09-14 22:00:29 DEBUG Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
+2023-09-14 22:00:29 DEBUG Output: "Google Chrome 116.0.5845.187 "
+2023-09-14 22:00:29 DEBUG Detected browser: chrome 116.0.5845.187
+2023-09-14 22:00:29 DEBUG Reading metadata from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2023-09-14 22:00:29 DEBUG Required driver: chromedriver 116.0.5845.96
+2023-09-14 22:00:29 DEBUG chromedriver 116.0.5845.96 already in the cache
+2023-09-14 22:00:29 DEBUG Driver path: /Users/centr/.cache/selenium/chromedriver/mac-x64/116.0.5845.96/chromedriver
+2023-09-14 22:00:29 DEBUG Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2023-09-14 22:00:29 DEBUG Using driver at: /Users/centr/.cache/selenium/chromedriver/mac-x64/116.0.5845.96/chromedriver
+2023-09-14 22:00:29 DEBUG Started executable: `/Users/centr/.cache/selenium/chromedriver/mac-x64/116.0.5845.96/chromedriver` in a child process with pid: 18155
+2023-09-14 22:00:29 DEBUG POST http://localhost:63936/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "args": []}}}}
+2023-09-14 22:00:29 DEBUG Starting new HTTP connection (1): localhost:63936
+2023-09-14 22:00:32 DEBUG http://localhost:63936 "POST /session HTTP/1.1" 200 0
+2023-09-14 22:00:32 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"116.0.5845.187","chrome":{"chromedriverVersion":"116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})","userDataDir":"/var/folders/n6/y57gn4d957xbcdzgyl3lsw400000gn/T/.org.chromium.Chromium.Wzuw46"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63951"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"7c9b1910c4d7aef524d3b6df4054f666"}} | headers=HTTPHeaderDict({'Content-Length': '896', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:32 DEBUG Finished Request
+2023-09-14 22:00:32 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/url {"url": "https://demoqa.com/text-box"}
+2023-09-14 22:00:34 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/url HTTP/1.1" 200 0
+2023-09-14 22:00:34 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:34 DEBUG Finished Request
+2023-09-14 22:00:34 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element {"using": "css selector", "value": "[id=\"userName\"]"}
+2023-09-14 22:00:34 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element HTTP/1.1" 200 0
+2023-09-14 22:00:34 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A0575101DC89ACE524216BBFAFA1801B_element_32"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:34 DEBUG Finished Request
+2023-09-14 22:00:34 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_32/value {"text": "Vasya", "value": ["V", "a", "s", "y", "a"], "id": "A0575101DC89ACE524216BBFAFA1801B_element_32"}
+2023-09-14 22:00:34 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_32/value HTTP/1.1" 200 0
+2023-09-14 22:00:34 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:34 DEBUG Finished Request
+2023-09-14 22:00:34 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element {"using": "css selector", "value": "[placeholder=\"name@example.com\"]"}
+2023-09-14 22:00:34 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element HTTP/1.1" 200 0
+2023-09-14 22:00:34 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A0575101DC89ACE524216BBFAFA1801B_element_38"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:34 DEBUG Finished Request
+2023-09-14 22:00:34 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_38/value {"text": "pupkin@mail.com", "value": ["p", "u", "p", "k", "i", "n", "@", "m", "a", "i", "l", ".", "c", "o", "m"], "id": "A0575101DC89ACE524216BBFAFA1801B_element_38"}
+2023-09-14 22:00:35 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_38/value HTTP/1.1" 200 0
+2023-09-14 22:00:35 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:35 DEBUG Finished Request
+2023-09-14 22:00:35 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element {"using": "xpath", "value": "//textarea[@id=\"currentAddress\"]"}
+2023-09-14 22:00:36 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element HTTP/1.1" 200 0
+2023-09-14 22:00:36 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A0575101DC89ACE524216BBFAFA1801B_element_41"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:36 DEBUG Finished Request
+2023-09-14 22:00:36 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_41/value {"text": "My curr addr in Ukraine", "value": ["M", "y", " ", "c", "u", "r", "r", " ", "a", "d", "d", "r", " ", "i", "n", " ", "U", "k", "r", "a", "i", "n", "e"], "id": "A0575101DC89ACE524216BBFAFA1801B_element_41"}
+2023-09-14 22:00:36 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_41/value HTTP/1.1" 200 0
+2023-09-14 22:00:36 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:36 DEBUG Finished Request
+2023-09-14 22:00:36 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element {"using": "xpath", "value": "//textarea[contains(@id, \"permanentA\")]"}
+2023-09-14 22:00:36 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element HTTP/1.1" 200 0
+2023-09-14 22:00:36 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A0575101DC89ACE524216BBFAFA1801B_element_43"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:36 DEBUG Finished Request
+2023-09-14 22:00:36 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_43/value {"text": "My perm addr also in Ukraine", "value": ["M", "y", " ", "p", "e", "r", "m", " ", "a", "d", "d", "r", " ", "a", "l", "s", "o", " ", "i", "n", " ", "U", "k", "r", "a", "i", "n", "e"], "id": "A0575101DC89ACE524216BBFAFA1801B_element_43"}
+2023-09-14 22:00:36 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_43/value HTTP/1.1" 200 0
+2023-09-14 22:00:36 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:36 DEBUG Finished Request
+2023-09-14 22:00:36 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element {"using": "xpath", "value": "//button[.=\"Submit\"]"}
+2023-09-14 22:00:36 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element HTTP/1.1" 200 0
+2023-09-14 22:00:36 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"A0575101DC89ACE524216BBFAFA1801B_element_45"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:36 DEBUG Finished Request
+2023-09-14 22:00:36 DEBUG POST http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_45/click {"id": "A0575101DC89ACE524216BBFAFA1801B_element_45"}
+2023-09-14 22:00:37 DEBUG http://localhost:63936 "POST /session/7c9b1910c4d7aef524d3b6df4054f666/element/A0575101DC89ACE524216BBFAFA1801B_element_45/click HTTP/1.1" 400 0
+2023-09-14 22:00:37 DEBUG Remote response: status=400 | data={"value":{"error":"element click intercepted","message":"element click intercepted: Element \u003Cbutton id=\"submit\" type=\"button\" class=\"btn btn-primary\">...\u003C/button> is not clickable at point (849, 595). Other element would receive the click: \u003Ciframe id=\"google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0\" name=\"google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0\" title=\"3rd party ad content\" width=\"728\" height=\"90\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\" role=\"region\" aria-label=\"Advertisement\" tabindex=\"0\" style=\"border: 0px; vertical-align: bottom;\" data-load-complete=\"true\" data-google-container-id=\"1\">\u003C/iframe>\n  (Session info: chrome=116.0.5845.187)","stacktrace":"0   chromedriver                        0x0000000104580638 chromedriver + 5002808\n1   chromedriver                        0x0000000104577a53 chromedriver + 4966995\n2   chromedriver                        0x0000000104128a57 chromedriver + 449111\n3   chromedriver                        0x00000001041768f8 chromedriver + 768248\n4   chromedriver                        0x0000000104174345 chromedriver + 758597\n5   chromedriver                        0x0000000104171884 chromedriver + 747652\n6   chromedriver                        0x000000010417064f chromedriver + 742991\n7   chromedriver                        0x000000010416303a chromedriver + 688186\n8   chromedriver                        0x00000001041953f2 chromedriver + 893938\n9   chromedriver                        0x00000001041628b8 chromedriver + 686264\n10  chromedriver                        0x00000001041955ae chromedriver + 894382\n11  chromedriver                        0x00000001041b0391 chromedriver + 1004433\n12  chromedriver                        0x00000001041951c3 chromedriver + 893379\n13  chromedriver                        0x0000000104160df9 chromedriver + 679417\n14  chromedriver                        0x0000000104161fde chromedriver + 683998\n15  chromedriver                        0x000000010453d2d9 chromedriver + 4727513\n16  chromedriver                        0x00000001045422de chromedriver + 4747998\n17  chromedriver                        0x00000001045002c9 chromedriver + 4477641\n18  chromedriver                        0x000000010454302d chromedriver + 4751405\n19  chromedriver                        0x00000001045160ec chromedriver + 4567276\n20  chromedriver                        0x00000001045607f8 chromedriver + 4872184\n21  chromedriver                        0x00000001045609b7 chromedriver + 4872631\n22  chromedriver                        0x0000000104570a1f chromedriver + 4938271\n23  libsystem_pthread.dylib             0x00007ff81ade61d3 _pthread_start + 125\n24  libsystem_pthread.dylib             0x00007ff81ade1bd3 thread_start + 15\n"}} | headers=HTTPHeaderDict({'Content-Length': '2832', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:37 DEBUG Finished Request
+2023-09-14 22:00:37 DEBUG DELETE http://localhost:63936/session/7c9b1910c4d7aef524d3b6df4054f666 {}
+2023-09-14 22:00:37 DEBUG http://localhost:63936 "DELETE /session/7c9b1910c4d7aef524d3b6df4054f666 HTTP/1.1" 200 0
+2023-09-14 22:00:37 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-09-14 22:00:37 DEBUG Finished Request
