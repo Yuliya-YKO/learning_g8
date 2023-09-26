@@ -1,0 +1,14 @@
+{
+    "Yes": {
+        "is_selected": false,
+        "is_enabled": true
+    },
+    "Impressive": {
+        "is_selected": false,
+        "is_enabled": true
+    },
+    "No": {
+        "is_selected": true,
+        "is_enabled": true
+    }
+}
